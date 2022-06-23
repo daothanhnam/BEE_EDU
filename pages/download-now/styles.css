@@ -1,0 +1,230 @@
+:root {
+  --deg: 10deg;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+}
+
+.wrapper {
+  background-image: url('./assets/background-white-paint.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.content {
+  padding-top: 40px;
+  display: flex;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.information__logo-text {
+  align-self: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+.information__logo-text__content {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.information__logo-text__content--orange {
+  background-image: linear-gradient(to right, #fbad18, #f9d025);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.information__logo-text__content--blue {
+  color: #4584c5;
+}
+
+.information__logo-text__desc {
+  font-size: 24px;
+}
+
+.information__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information__download__image-bee {
+  max-width: 100%;
+}
+
+.information__download__desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #fbad18, #f9d025);
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 24px -36px 0 rgba(0, 0, 0, 0.1);
+  transform: skewY(-10deg);
+}
+
+.information__download__desc__title {
+  font-size: 24px;
+  font-weight: bold;
+  transform: skewY(10deg);
+}
+
+.information__download__desc__content {
+  font-size: 18px;
+  transform: skewY(10deg);
+}
+
+.information__download__desc__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(10deg);
+}
+
+.information__download__desc__box__item {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin: 0 16px;
+  border-radius: 10px;
+}
+
+.information__download__border {
+  outline: 1px dashed #fff;
+  outline-offset: 10px;
+  padding: 40px;
+}
+
+.download-detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.download-detail__heading {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.download-detail__links {
+  padding-top: 60px;
+}
+
+.download-detail__link {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  border-radius: 100rem;
+  background-color: #fff;
+}
+
+.download-detail__link:first-child {
+  margin-bottom: 32px;
+}
+
+.download-detail__link__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.download-detail__link__icon img {
+  max-width: 100%;
+}
+
+.download-detail__link__content {
+  padding-left: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download-detail__link__content__suggestion {
+  font-size: 24px;
+  margin: 0;
+}
+
+.download-detail__link__content__store {
+  font-size: 30px;
+  font-weight: bold;
+  color: grey;
+  margin: 0;
+}
+
+.download-detail__contact {
+  padding-top: 60px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.download-detail__contact__item {
+  padding: 16px;
+}
+
+.download-detail__contact__item__icon {
+  padding-right: 24px;
+}
+
+footer {
+  background-image: url(./assets/bg-book-green.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 22px;
+}
+
+.overlay > p {
+  width: 30%;
+}
+
+.task-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

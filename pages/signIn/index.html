@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="shortcut icon" href="../../assets/images/logo-footer-removebg-preview.png" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  </head>
+
+  <body>
+    <a href="./../home/index.html" 
+    class="back__btn" onclick="history.back()">
+      <img src="../../assets/images/icons/backIcon.svg" alt="" />
+    </a>
+    <div class="login">
+      <div>
+        <h4>Chào mừng bạn đã trở lại!</h4>
+        <div>
+          <a href="./../signInWithGoogle/index.html">
+            <div><img src="../../assets/images/icons/google-logo.svg" alt="" /></div>
+            <span>Đăng nhập bằng google</span>
+          </a>
+          <a href="./../loginWithFacebook/index.html">
+            <div><img src="../../../assets/images/icons/fb-logo.svg" alt="" /></div>
+            <span>Đăng nhập bằng facebook</span>
+          </a>
+        </div>
+        <p class="login__or"><span>HOẶC</span></p>
+        <form class="login__form">
+          <div class="text-field">
+            <input autocomplete="off" type="email" id="email" placeholder="Email của bạn" />
+          </div>
+          <div class="text-field">
+            <input autocomplete="off" type="password" id="password" placeholder="Mật khẩu" />
+            <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span>
+          </div>
+          <div class="savePW">
+            <div>
+              <input type="checkbox" id="savePw" />
+              <label for="savePw">Ghi nhớ mật khẩu</label>
+            </div>
+            <a href="./../fogetPassword/index.html">Quên mật khẩu</a>
+          </div>
+          <a id="btn_submit" class="btn btn-block btn-primary btn_submit">ĐĂNG NHẬP</a>
+        </form>
+      </div>
+      <div class="login_right">
+        <img src="../../assets/images/bee-login.svg" alt="" />
+        <h4>Bạn Chưa Có Tài Khoản?</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sequi pariatur optio excepturi laborum
+          numquam voluptates cupiditate.
+        </p>
+        <a href="../signUp/index.html" class="button--signUp">Đăng kí</a>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).on('click', '.toggle-password', function () {
+        $(this).toggleClass('fa-eye fa-eye-slash');
+
+        var input = $('#password');
+        input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password');
+      });
+
+      $('#btn_submit').on('click',function(e){
+        const email = document.getElementById('email').value
+        const pass = document.getElementById('savePw').value
+        if(!email || !pass){
+          alert('Email hoặc mật khẩu không hợp lê!')
+          e.defaultPrevented()
+        }else{
+          localStorage.setItem('user',JSON.stringify({fullname:"Luc Duc Thanh",email: email}))
+          document.location.href = '/pages/home/index.html'
+        }
+      })
+    </script>
+  </body>
+</html>

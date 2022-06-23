@@ -1,0 +1,171 @@
+
+
+.nav .nav-item a {
+  color: #000 !important;
+}
+.nav .nav-item:first-child {
+  border: none !important;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+}
+
+.banner--img {
+  background-color: black;
+}
+
+.edit-baner--btn {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: translateX(-50%);
+}
+
+/* content */
+.user-info {
+  border-radius: 20px;
+}
+
+.avatar--img {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.school-name .icon {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.info-item {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+img.info--icon {
+  margin-right: 8px;
+  width: 35px;
+}
+
+.info-item--value {
+  font-weight: bold;
+}
+
+.edit-info--btn i {
+  margin-right: 5px;
+}
+li > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Sub navigate */
+
+.sub-navigate .nav-link.active {
+  color: #fbad18 !important;
+  border-bottom: #fbad18 2px solid !important;
+  background-color: transparent !important;
+  border-radius: 0;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  background-image: url(./assets/bg-book-green.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 80px;
+}
+
+.footer__overlay > div {
+  width: 33%;
+  padding: 0 60px;
+}
+
+.footer__contact__infor__main {
+  color: #fad126;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.footer__contact__infor__item {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social__item {
+  display: inline-block;
+}
+
+.footer__register {
+  align-self: flex-start;
+}
+
+.center-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+
+.list-group--custom {
+  border-radius: 4rem !important;
+}
+
+.nav__item {
+  font-size: 20px;
+  padding: 1.5rem 2rem !important;
+}
+
+.active-custom {
+  background-color: #e8f0fe !important;
+}
+
+.information__left__upload-btn {
+  padding-top: 48px !important;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #aaa !important;
+}
+
+.list-group-item--custom {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.information {
+  font-size: 18px;
+  color: #000 !important;
+}
+
+.list-group-item {
+  border: none !important;
+}
+
+.align-2-side {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+

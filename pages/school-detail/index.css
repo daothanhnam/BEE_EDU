@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: 'Baloo 2', cursive;
+}
+
+.cover-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* BANNER */
+.banner {
+  background-image: url(./assets/bg-banner.png);
+  height: 568px;
+  position: relative;
+}
+
+.banner__school-name {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+  width: 100%;
+  height: 160px;
+  padding: 40px 0 40px 80px;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.9019607843137255)
+  );
+}
+
+.banner__school-name h3 {
+  font-size: 40px;
+}
+
+/* INTRODUCTION */
+.introduction {
+  background-image: url(./assets/background-white-paint.jpg);
+}
+
+.introduction__item {
+  padding: 60px 80px;
+}
+
+.introduction__item h3 {
+  font-size: 40px;
+  padding-bottom: 48px;
+}
+
+.introduction__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ACTIVITY */
+.introduction__item__activity__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.introduction__item__activity__container__image {
+  max-width: 100%;
+  margin-left: -6%;
+  margin-top: -6%;
+}
+/* FOOTER */
+
+.footer {
+  position: relative;
+  background-image: url(./assets/bg-book-green.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 80px;
+}
+
+.footer__overlay > div {
+  width: 33%;
+  padding: 0 60px;
+}
+
+.footer__contact__infor__main {
+  color: #fad126;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.footer__contact__infor__item {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social__item {
+  display: inline-block;
+}
+
+.footer__register {
+  align-self: flex-start;
+}
+
+
+
+/*  #ACTIVE NAVLINK */
+.nav .nav-item:not(:nth-child(3)) {
+  border-bottom: none !important;
+}
+
+.nav-item:not(:nth-child(3)) a {
+  color: #000 !important;
+}
+
+.nav-item:nth-child(3) {
+  border-bottom: 3px solid #fbad18 !important;
+}
+
+.nav-item:nth-child(3) * {
+  color: #fbad18 !important;
+}

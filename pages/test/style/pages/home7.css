@@ -1,0 +1,83 @@
+.home-page7 {
+  padding: 40px;
+  background-image: url(../../asset/imgs/bg7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-page7 > p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-page7__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page7_nav {
+  text-align: center;
+  border: 1px solid var(--nav7);
+  background-color: var(--nav7);
+  display: inline-block;
+
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.home-page7_nav p {
+  display: inline-block;
+  margin: 0;
+  color: white;
+  padding: 4px 24px;
+  font-size: 24px;
+}
+
+#pick {
+  border: 1px solid #76b1de;
+  background-color: #76b1de;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transform: scale(1.1) translateY(-10px);
+}
+
+.home-page7_main {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-page7_component:nth-child(2) {
+  margin-bottom: 200px;
+}
+
+.home-page7_component p {
+  text-align: center;
+  font-size: 25px;
+  color: var(--name-text);
+  font-weight: bold;
+}
+
+.bee-achievement {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 328px;
+  height: 425px;
+}
+
+.bee-achievement img {
+  max-width: 100%;
+  object-fit: contain;
+}

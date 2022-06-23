@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div id="header"></div>
+  <section class="banner cover-background">
+    <div class="banner__school-name">
+      <h3>Tiểu học Kim liên</h3>
+    </div>
+  </section>
+  <section class="introduction cover-background">
+    <div class="introduction__item">
+      <h3>Giới thiệu</h3>
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+          <div class="introduction__image p-2">
+            <img src="./assets/intro-1.png" alt="Intro 1" />
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="introduction__image p-2">
+            <img src="./assets/intro-2.png" alt="Intro 2" />
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="introduction__image p-2">
+            <img src="./assets/intro-3.png" alt="Intro 3" />
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class="introduction__image">
+            <img src="./assets/intro-4.png" alt="Intro 4" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="introduction__item">
+      <h3>Hoạt động</h3>
+      <div class="introduction__item__activity__container">
+        <img src="./assets/activities.png" alt="Intro" class="introduction__item__activity__container__image">
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="footer cover-background">
+    <div class="footer__overlay">
+      <div class="footer__logo">
+        <img src="./assets/beedu_logo-web.png" alt="Beedu logo web" />
+      </div>
+      <div class="footer__contact__infor">
+        <h3 class="footer__contact__infor__main">Liên hệ với chúng tôi</h3>
+        <p class="footer__contact__infor__item">
+          Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        </p>
+        <p class="footer__contact__infor__item">Email: abcdzyx@gmail.com</p>
+        <p class="footer__contact__infor__item">Phone number: +84 0900 909 787</p>
+        <ul class="footer__social">
+          <li class="footer__social__item">
+            <img src="./assets/fb-icon.png" alt="Facebook icon">
+          </li>
+          <li class="footer__social__item">
+            <img src="./assets/instagram-icon.png" alt="Facebook icon">
+          </li>
+          <li class="footer__social__item">
+            <img src="./assets/be-icon.png" alt="Facebook icon">
+          </li>
+        </ul>
+      </div>
+      <div class="footer__register">
+        <h3 class="footer__contact__infor__main">Đăng ký</h3>
+        <p class="footer__contact__infor__item">
+          Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        </p>
+        <input type="text" class="form-control" placeholder="Email" />
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('./../../component/header/index.html');
+    });
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

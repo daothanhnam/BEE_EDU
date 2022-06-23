@@ -1,0 +1,39 @@
+.home-page6 {
+  background: linear-gradient(to bottom, #fddc2d, #fbad18);
+  padding: 70px 50px;
+}
+
+.home-page6 p {
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.home-page6_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-page6_container {
+  border: 1px solid none;
+  border-radius: 5px;
+  background-color: var(--bg6);
+  width: 23%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  margin-top: 300px;
+}
+.second {
+  margin-top: 150px;
+}
+.third {
+  margin-bottom: 200px;
+}
+.fourth {
+  margin-top: 210px;
+}

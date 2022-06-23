@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giáo dục</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="body">
+      <div class="left">
+        <div class="content">
+          <h4>Hãy giúp tôi tìm ...</h4>
+          <p>Trường ở Quận/Huyện</p>
+          <select name="" id="">
+            <!-- <option value=""></option> -->
+            <option value="">Quận Thanh Xuân</option>
+            <option value="">Quận Đống Đa</option>
+          </select>
+          <p>Tên trường</p>
+          <select onchange="handleChange(event)">
+            <!-- <option value=""></option> -->
+            <option value="">Tiểu học Quang Trung</option>
+            <option value="kimlien">Tiểu học Kim Liên</option>
+          </select>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="one kimlien" style="transform: translateX(30px)">
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 156 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 161 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 162 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 167 –.png" alt="School Detail Image" />
+            </a>
+          </div>
+          <div class="two" style="margin-top: 15%">
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 157 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 160 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 163 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 166 –.png" alt="School Detail Image" />
+            </a>
+          </div>
+          <div class="three" style="transform: translateX(-30px)">
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 158 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 159 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 164 –.png" alt="School Detail Image" />
+            </a>
+            <a href="./../school-detail/index.html">
+              <img src="./assets/Component 165 –.png" alt="School Detail Image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $(function () {
+        $('#header').load('./../../component/header/index.html');
+      });
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>

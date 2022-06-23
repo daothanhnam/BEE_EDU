@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    justify-content: end;
+}
+
+.left {
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('./Group\ 3806.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left .content {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.left h4 {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.left p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.left select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+.right {
+    width: 60%;
+    padding: 100px 5%;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.right .content {
+    display: flex;
+}
+
+
+.nav .nav-item:not(:nth-child(3)) {
+    border-bottom: none !important;
+}
+
+.nav-item:not(:nth-child(3)) a {
+    color: #000 !important;
+}
+
+.nav-item:nth-child(3) {
+    border-bottom: 3px solid #fbad18 !important;
+}
+
+.nav-item:nth-child(3) * {
+    color: #fbad18 !important;
+}
+
+.one,
+.two,
+.three {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}

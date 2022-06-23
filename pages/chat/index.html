@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <section class="chat-container">
+      <div class="row">
+        <div class="col-xs-12 col-md-1 p-0">
+          <ul class="list-group pt-4 d-flex flex-column justify-content-center align-items-center">
+            <li class="list-group-item border-0 chat__section chat__section--active" id="personalLink">
+              <i class="fa-solid fa-comments"></i>
+            </li>
+            <li class="list-group-item border-0 chat__section" id="groupLink">
+              <i class="fa-solid fa-people-roof"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-3 p-0">
+          <div class="chat__item__container">
+            <div class="pt-4 pb-2 d-flex justify-content-between align-items-center">
+              <div class="position-relative chat-search-container">
+                <input type="text" class="form-control" />
+                <span class="chat-search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+              <span class="chat-search-plus px-3" id="findMemberIcon">
+                <i class="fa-solid fa-circle-plus"></i>
+              </span>
+            </div>
+            <ul class="list-group pt-3 pe-2" id="personalChat">
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-1.png" alt="Avatar 1" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name chat__item__user__name--active">Elizabeth 3E</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Elizabeth đã gửi cho bạn một nhãn dán </span>
+                      <span class="chat__item__user__count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-2.png" alt="Avatar 2" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Tommy Tèo 3A</span>
+                      <span class="chat__item__user__time">12:02</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Tèo: Alo bạn Đức ơi nghe rõ trả lời </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-3.png" alt="Avatar 3" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Cô Minh Hằng</span>
+                      <span class="chat__item__user__time">12:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Đã bày tỏ cảm xúc về tin nhắn...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-4.png" alt="Avatar 4" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Cô Linh Đan</span>
+                      <span class="chat__item__user__time">21:55</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Đã bày tỏ cảm xúc về tin nhắn...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+                
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/turning.jfif" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mây Mây</span>
+                      <span class="chat__item__user__time">00:00</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Mây:My name is Mei Mei </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-5.png" alt="Avatar 5" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Cô Hiền</span>
+                      <span class="chat__item__user__time">05:23</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:Dạ vâng ạ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-6.png" alt="Avatar 6" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Thầy Lâm</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:Thầy ơi ăn bánh gà không ạ?</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-7.png" alt="Avatar 7" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Hồng Thái 5C</span>
+                      <span class="chat__item__user__time">11:1</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:Chị em mình đi mua con thỏ đi</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-8.png" alt="Avatar 8" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Minh 3D</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Đức:Cầm băng trên tay , phi ngay quán nhậu</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-10.png" alt="Avatar 10" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Thầy Typh</span>
+                      <span class="chat__item__user__time">23:45</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:16 Typh on the mic</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/avt-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mẹ Hằng</span>
+                      <span class="chat__item__user__time">21:00</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Hằng:Mày có về nhà ngay không thì bảo</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+            
+              
+            
+            </ul>
+            <ul class="list-group pt-3 pe-2 d-none" id="groupChat">
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-1.png" alt="Group 1" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name chat__item__user__name--active">Beedu Group</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Baby đã gửi một nhãn dán</span>
+                      <span class="chat__item__user__count">5</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+               <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-2.png" alt="Group 2" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm học nhà Tèo 3A</span>
+                      <span class="chat__item__user__time">11:!1</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Tèo đã gửi một nhãn dán</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-3.png" alt="Avatar 3" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm Art Cô Minh Hằng</span>
+                      <span class="chat__item__user__time">11:12</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:Tớ không biết làm</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-4.png" alt="Avatar 4" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm Tiếng Việt Cô Linh Đan</span>
+                      <span class="chat__item__user__time">21:00</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Cô Đan: Mai kiểm tra bài thơ...</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-5.png" alt="Avatar 5" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm Tiếng Anh cô Hiền</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Cô Hiền:Say cheese!</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/turning.jfif" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Mei Mei và những người bạn</span>
+                      <span class="chat__item__user__time">17:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Mây:Chị em mình đi mua con thỏ đi </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-6.png" alt="Avatar 6" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm nhảy Thầy Lâm</span>
+                      <span class="chat__item__user__time">00:00</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Lâm:Hôm nay ăn bánh gà nhé </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-7.png" alt="Avatar 7" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm bóng đá</span>
+                      <span class="chat__item__user__time">17:33</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:Thứ sáu</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-8.png" alt="Avatar 8" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm rapper</span>
+                      <span class="chat__item__user__time">22:22</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">TLinh:Nhạc hay sao không lắc nhỉ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-10.png" alt="Avatar 10" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm gia đình</span>
+                      <span class="chat__item__user__time">19:00</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Mẹ: 2 đứa đâu xuống ăn cơm</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 ps-2">
+                <div class="d-flex justify-content-start align-items-center w-100">
+                  <div class="chat__item__avatar">
+                    <img src="./assets/gr-9.png" alt="Avatar 9" class="mw-100" />
+                  </div>
+                  <div class="ps-2 chat__item__user">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__name">Nhóm vui chơi lành mạnh</span>
+                      <span class="chat__item__user__time">12:34</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="chat__item__user__msg">Bạn:Cầm bằng trên tay, phi ngay quán nhậu</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8 p-0 px-1">
+          <div
+            class="d-flex justify-content-center align-items-center flex-fill h-100 chat__item__detail"
+            id="startChat"
+          >
+            <img src="./assets/bee-chat.png" alt="Bee chat" />
+          </div>
+          <div
+            class="d-flex flex-column justify-content-start align-items-center flex-fill h-100 chat__item__detail d-none border-start"
+            id="findMember"
+          >
+            <div
+              class="form-group align-self-start w-100 d-flex justify-content-start align-items-center border-bottom px-2 py-3 pt-4 fs-5 mb-4"
+            >
+              <label class="fw-bold me-3">Đến</label>
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="Nhập tên của một người mà bạn muốn trò chuyện"
+              />
+            </div>
+            <img src="./assets/find-member.png" alt="Bee chat" />
+          </div>
+          <div
+            class="chat__personal__detail--personal border-start h-100 position-relative d-none"
+            id="chat__personal__detail"
+          >
+            <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
+              <div class="chat__personal__detail__header__info">
+                <div class="position-relative chat__item__avatar--detail">
+                  <img src="./assets/avt-1.png" alt="Elizabeth" id="chat__personal__detail__avatar" />
+                </div>
+                <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
+                  <span class="chat__item__user__name" id="chat__personal__detail__username">Elizabeth 3E</span>
+                  <span>Đang hoạt động</span>
+                </div>
+              </div>
+              <div class="chat__personal__detail__header__actions">
+                <span
+                  class="chat__personal__detail__header__actions__item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <span
+                  class="chat__personal__detail__header__actions__item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="fa-solid fa-video"></i
+                ></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+            </div>
+            <div class="chat__message__container px-1">
+              <div class="d-flex justify-content-start pt-2">
+                <ul class="list-group border-0">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                   Mà cậu làm bài tập 3  toán chưa?
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Khó quá trời luôn á 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Tớ làm cả buổi mà không ra</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Bài tập 3 môn toán á???
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Dễ mà nhỉ =)) ???</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Gọi đi t chỉ cho</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Lúc nãy tớ nấu cơm nên không để ý điện thoại 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Hôm nay nhà có khách nên tớ phải phụ mẹ 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Vui ơi là vui</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
+                  <li class="chat__message__item shadown">
+                    <img src="./assets/brown-and-frien.png" alt="image" />
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Vậy hả ???
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Chắc cậu nấu cơm ngon lắm nhỉ</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Chả bù tớ chả biết nấu  cơm</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Tớ biết nấu mấy món thôi 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                   Dễ lắm 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Để bao giờ tớ nấu cho cậu ăn nhé </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:v</li>
+                </ul>
+              </div>
+            </div>
+            <div class="position-absolute shadow-lg bottom-0 w-100 py-3" style="z-index: 999; margin-right: -7px">
+              <div class="px-3 d-flex justify-content-between align-items-center">
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </span>
+                <div class="px-3 w-100">
+                  <textarea class="form-control" placeholder="Nhập tin nhắn"></textarea>
+                </div>
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="chat__personal__detail--personal border-start h-100 position-relative d-none"
+            id="chat__group__detail"
+          >
+            <div class="chat__personal__detail__header p-3 w-100 d-flex justify-content-between align-items-center">
+              <div class="chat__personal__detail__header__info">
+                <div class="position-relative chat__item__avatar--detail">
+                  <img src="./assets/gr-1.png" alt="Elizabeth" id="chat__group__detail__avatar" />
+                </div>
+                <div class="ps-3 d-flex justify-content-center align-items-start flex-column">
+                  <span class="chat__item__user__name" id="chat__group__detail__username">Beedu Group</span>
+                  <span>Đang hoạt động</span>
+                </div>
+              </div>
+              <div class="chat__personal__detail__header__actions">
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-phone"></i></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-video"></i></span>
+                <span class="chat__personal__detail__header__actions__item"><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+            </div>
+            <div class="chat__message__container px-1">
+              <div class="d-flex justify-content-start pt-2">
+                <ul class="list-group border-0">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Đỉnhhhh
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Tymmm
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Bài đấy khó lắm á </li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    Ui, có gì đâu , bài này dễ với phụ huynh mà 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Chứ khó với lớp 3</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Tụi mình</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                   Bài tiếng anh hôm qua á ???
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                   Đâu tớ thấy có khó lắm đâu
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Tớ làm được 9 điểm nè </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Điểm hơi choánn</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-end">
+                <ul class="list-group align-items-end">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">
+                    9 điểm mà còn kêu chánn
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Đâu màaa</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--right">Khiêm tốn thế</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-start">
+                <ul class="list-group">
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Hê, bài đó cơ bản 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">
+                    Các cậu làm bài tập qua Beedu thì sẽ làm được bài đó thôi 
+                  </li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">Cơ bảnnn</li>
+                  <li class="list-group-item chat__message__item shadown chat__message__item--left">:))</li>
+                  <li class="chat__message__item shadown">
+                    <img src="./assets/brown-and-frien.png" alt="image" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="position-absolute shadow-lg bottom-0 w-100 py-3" style="z-index: 999; margin-right: -7px">
+              <div class="px-3 d-flex justify-content-between align-items-center">
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </span>
+                <div class="px-3 w-100">
+                  <textarea class="form-control" placeholder="Nhập tin nhắn"></textarea>
+                </div>
+                <span style="font-size: 40px">
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-5 d-flex align-items-center justify-content-center flex-column">
+            <img src="./assets/elizabeth.png" alt="Elizabeth" />
+            <h3 class="pt-4 fw-bold">Elizabeth 3E</h3>
+            <p>Đang liên hệ...</p>
+            <div class="modal__actions">
+              <div class="position-relative">
+                <div class="bee-phone">
+                  <img src="./assets/bee-phone.png" alt="bee phone" />
+                </div>
+                <span class="modal__actions__item">
+                  <img src="./assets/modal-action-1.png" alt="Action 1" />
+                </span>
+                <span class="modal__actions__item">
+                  <img src="./assets/modal-action-2.png" alt="Action 2" />
+                </span>
+                <span class="modal__actions__item" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="./assets/modal-action-3.png" alt="Action 3" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $(function () {
+        $('#header').load('./../../component/header/index.html');
+      });
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Message</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="../../assets/images/logo-footer-removebg-preview.png">
+</head>
+<body>
+    <div class="call">
+        <div class="call__top">
+              <img src="./asset/beautiful-little-blonde-girl-smiles-winking-posing-touching-face-with-her-hands-pink-cute-dress-child-looking-happy-delighted-copy-space.png" alt="avt">
+              <p id="call__name">Elizabeth 3E</p>
+              <p>Đang liên hệ...</p>
+            </div>
+        <div class="call__bottom">
+            
+            <img src="./asset/Group 4034.jpg" alt="">
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function () { $('#header').load('./../../component/header/index.html') }) 
+        textarea = document.querySelector("#autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+      
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }    
+    </script>
+</body>
+</html>

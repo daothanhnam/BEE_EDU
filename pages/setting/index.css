@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Baloo 2', cursive;
+  }
+  
+
+
+.setting{
+    padding: 70px;
+    background-image: url(../../assets/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.setting__main{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.setting >  p {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5%;
+
+}
+.setting__content {
+  width: 70%;
+}
+.setting__content >p:first-child{
+    font-size: 25px;
+    font-weight: 500;
+   
+}
+.setting__content > p:last-child{
+    font-size: 18px;
+}
+
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+    margin: 50px;
+}
+.slider {
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+    left: -10%;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.switch input {display: none;}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+input:checked +.slider {
+    background-color: #4F93F2;
+}
+input:checked + .slider::before {
+   transform: translateX(60px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    position: relative;
+    background-image: url(./assets/bg-book-green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .footer__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 60px 80px;
+  }
+  
+  .footer__overlay>div {
+    width: 33%;
+    padding: 0 60px;
+  }
+  
+  .footer__contact__infor__main {
+    color: #fad126;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  
+  .footer__contact__infor__item {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .footer__social {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer__social__item {
+    display: inline-block;
+  }
+  
+  .footer__register {
+    align-self: flex-start;
+  }

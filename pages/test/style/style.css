@@ -1,0 +1,43 @@
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+@import 'base/utilities.css';
+
+@import 'pages/home7.css';
+@import 'pages/home8.css';
+@import 'pages/beequiz.css';
+
+.form-select{
+    width: 150px !important;;
+}
+.score--img{
+    width: 100%;
+}
+.content--card {
+    border-radius: 15px!important;
+}
+.hero--btn{
+    width:100%;
+    height:80px;
+    border-radius: 1.5rem!important;
+
+}
+
+.hero-btn-group{
+    position:relative;
+}
+
+.hero-btn--img{
+    position: absolute;
+    height: 80px!important;
+    top: 8px;
+    transform: translateX(60%);
+}
+
+.subject-item{
+    width: 70px;
+}
+
+.subject-item img{
+    width:100%
+}

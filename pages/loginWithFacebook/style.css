@@ -1,0 +1,75 @@
+body {
+    padding: 50px;
+    padding-top: 5%;
+    background-image: url(../../assets/images/background/bg2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a.back__btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 100%);
+    cursor: pointer;
+}
+
+.back__btn img {
+    width: 40px;
+}
+
+ #modal{
+    width: 60%;
+    min-width: 400px;
+    height: auto;
+    border-radius: 20px !important;
+}
+.modal__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 10px;
+    color:#B7B7B7;
+}
+
+.modal__header--icon{
+    width: 20px;
+    margin-right: 7px;
+}
+.modal__content{
+    text-align: center;
+}
+.modal__content--img{
+    width:100px;
+    margin-bottom: 2rem;
+}
+.modal__content--btn-group{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__content--btn-group .btn{
+    width: 49%;
+}
+.modal__content--btn-group .btn-cancel{
+    background:#e4e6eb;
+    border: none;
+    color: #868686;
+}
+
+.modal__content--btn-group .btn-submit{
+    background:#3C74B3 !important;
+    border: none;
+}
+
+.modal__content--btn-group .btn-submit:hover{
+    background:#1959a1 !important;
+    border: none;
+}
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí với google</title>
+    <link rel="shortcut icon" href="../../assets/images/logo-footer-removebg-preview.png">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    
+
+</head>
+
+<body>
+    <a class='back__btn' onclick="history.back()">
+        <img src="../../assets/images/icons/backIcon.svg" alt="">
+    </a>
+    <div id="confirm-continue-page" class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <div id="modal" class="shadow-lg bg-white rounded">
+            <div class="modal__header">
+                <img src="./../../assets/images/icons/google-logo.svg" alt="google-logo" class="modal__header--icon">
+                <span class="modal__header--text">Đăng kí bằng Google</span>
+            </div>
+            <div class="modal__content px-5 py-5">
+                <div class="content__heading text-center mb-5">
+                    <h3 class="content__heading--title">Chọn tài khoản</h3>
+                    <h4 class="content__heading--sub_title font-weight-light">để tiếp tục với Beedu</h4>
+                </div>
+                <ul class="content__account_list list-group list-group-flush mt-3">
+                    <li class="list-group-item list-group-item-action">
+                        <a onclick="changePassSuccess('Nguyễn Anh Tài','tainguyenanh.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <h5 class="fullname font-weight-bold">Tiểu học Kim Liên</h5>
+                                    <h6 class="email">KimLien@bee.edu.vn</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a onclick="changePassSuccess('Lê Trọng Thức','thucletrong.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <h5 class="fullname font-weight-bold">Tiểu học Cầu Giấy</h5>
+                                    <h6 class="email">CauGiay@bee.edu.vn</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a onclick="changePassSuccess('Lê Minh Đức','abc.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <h5 class="fullname font-weight-bold">Tiểu học Đống Đa</h5>
+                                    <h6 class="email">Dongda@bee.edu.vn</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a onclick="changePassSuccess('Lê Thanh Toàn','toanlethanh.edu@gmail.com')" class="acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <h5 class="fullname font-weight-bold">Tiểu học Hồ Chí Minh</h5>
+                                    <h6 class="email">HoChiMinh@bee.edu.vn</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a href="#" class="other-account acount_item text-decoration-none text-dark">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="acount_item__avatar">
+                                    <img src="./images/user-icon-gray.png" alt="" class="avatar--img">
+                                </div>
+                                <div class="account_item__desc ml-3">
+                                    <p class="text-black-50 mb-0">Sử dụng một tài khoản khác</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script>
+        function changePassSuccess(fullname,email){
+            localStorage.setItem('user',JSON.stringify({fullname,email}))
+            document.location.href="./../signUpSuccess/index.html"
+        }
+
+    </script>
+</body>
+
+</html>

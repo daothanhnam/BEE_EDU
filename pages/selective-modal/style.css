@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:wght@300;400&family=Open+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Oswald:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background: #7F8A95;
+  font-family: "roboto", "Poppins", sans-serif;
+}
+
+.modal {
+  max-width: 1200px;
+  margin: 5rem auto;
+  background: #FCC423;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.modal-header {
+  text-align: center;
+}
+.modal-title {
+  background: #3463A1;
+  display: inline-block;
+  width: 100%;
+  color: #FCC423;
+  padding: 1rem 2rem;
+}
+.modal-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-selection-item{
+  cursor: pointer;
+}
+.modal-selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 6.5rem;
+}

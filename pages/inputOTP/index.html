@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập mã xác nhận</title>
+    <link rel="shortcut icon" href="../../assets/images/logo-footer-removebg-preview.png">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+
+</head>
+
+<body>
+    <a class='back__btn' onclick="history.back()">
+        <img src="../../assets/images/icons/backIcon.svg" alt="">
+    </a>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <div id="modal" class="shadow-lg bg-white rounded">
+            <img src="./images/fogot-pass.png" alt="bee" class="modal__image">
+            <h4 class="modal__notifiction">Nhập mã xác nhận</h4>
+            <p class="text-secondary mx-4">Nhập mã xác nhận mà chúng tôi vừa gửi vào số điện thoại đăng kí của bạn</p>
+            <div class="my-5 mx-4 d-flex justify-content-center">
+                <form id="codeverifyForm">
+                    <div id="inputs">
+                        <input type="text" class="digit" id="verificationCodeDigit1" minlength="1" maxlength="1"
+                            required>
+                        <input type="text" class="digit" id="verificationCodeDigit2" minlength="1" maxlength="1"
+                            required>
+                        <input type="text" class="digit" id="verificationCodeDigit3" minlength="1" maxlength="1"
+                            required>
+                        <input type="text" class="digit" id="verificationCodeDigit4" minlength="1" maxlength="1"
+                            required>
+                    </div>
+                </form>
+            </div>
+            <p class="text-secondary mb-0">Bạn không nhận được mã xác nhận?</p>
+            <a id="re-send" class="text-direction-none mb-5 d-block">Gửi lại mã</a>
+
+            <a href="./../changePassword/index.html" class="btn-submit btn btn-block btn-primary btn-lg">GỬI</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxlp2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

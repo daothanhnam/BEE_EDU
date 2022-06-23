@@ -1,0 +1,182 @@
+.nav .nav-item a {
+  color: #000 !important;
+
+}
+
+.nav .nav-item:first-child {
+  border: none !important;
+}
+
+
+/* Banner */
+#banner {
+  position: relative;
+}
+
+.banner--img {
+  background-color: black;
+}
+
+.edit-baner--btn {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: translateX(-50%);
+}
+
+/* content */
+.user-info {
+  border-radius: 20px;
+}
+
+.avatar--img {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.school-name .icon {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.info-item {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+img.info--icon {
+  margin-right: 8px;
+  width: 35px;
+}
+
+.info-item--value {
+  font-weight: bold;
+}
+
+.edit-info--btn i {
+  margin-right: 5px;
+}
+
+.content--left {
+  position: relative;
+  transform: translateY(-10%)
+}
+
+.photo-group,
+.user-info {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  background: #fff;
+}
+
+
+/* content right */
+
+.sub-navigate .nav-link.active {
+  color: #fbad18 !important;
+  border-bottom: #fbad18 2px solid !important;
+  background-color: transparent !important;
+  border-radius: 0;
+}
+
+.input-post{
+  margin: 1rem 0;
+}
+
+.input-post .avatar {
+  width: 50px;
+  height: 50px;
+}
+
+#autoresizing {
+  background: #ddd;
+  flex: 1 1 0%;
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 15px 20px;
+  border: none;
+}
+
+.feature-list{
+  margin: 1rem 5rem 0; 
+  gap: 5rem;
+}
+.feature--img{
+  margin-right: 5px;
+  opacity: 0.8;
+}
+
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px auto;
+  justify-content: center;
+}
+
+.pagination p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination p:first-child {
+  background: url('./assets/Polygon1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  background-image: url(./assets/bg-book-green.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 80px;
+}
+
+.footer__overlay>div {
+  width: 33%;
+  padding: 0 60px;
+}
+
+.footer__contact__infor__main {
+  color: #fad126;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.footer__contact__infor__item {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social__item {
+  display: inline-block;
+}
+
+.footer__register {
+  align-self: flex-start;
+}

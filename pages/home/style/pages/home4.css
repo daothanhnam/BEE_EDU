@@ -1,0 +1,93 @@
+.feature {
+  display: flex;
+  position: relative;
+}
+
+.feature__image {
+  width: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./../../asset/imgs/students-knowin.png);
+}
+
+.feature__list-container {
+  width: 80%;
+}
+
+.feature__bee-go-to-school {
+  position: absolute;
+}
+
+.feature__list__container {
+  padding: 80px 120px;
+  background-color: #f1eee7;
+}
+
+.feature__list__container__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.feature__list__container__content {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 60px;
+}
+
+.feature__list__container__content__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.feature__list__container__content__item:not(:last-child) {
+  padding-bottom: 60px;
+}
+
+.feature__list__container__content__item__icon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: linear-gradient(to bottom, #fddc2d, #fbad18);
+  width: 140px;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature__list__container__content__item__desc {
+  padding-left: 32px;
+}
+
+.feature__list__container__content__item__desc__heading {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.feature__list__container__content__item__desc__content {
+  font-size: 16px;
+  color: #707070;
+  width: 50%;
+  margin: 0;
+}
+
+.feature__bee-intro {
+  position: absolute;
+  top: -30%;
+  transform: translateY(30%);
+  right: 10px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .feature__bee-intro {
+    right: -90px;
+  }
+
+  .feature__list__container__content__item__icon {
+    width: 200px;
+  }
+
+  .feature__list__container__content__item__desc__content {
+    width: 70%;
+  }
+}

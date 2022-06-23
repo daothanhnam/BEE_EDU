@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xem Thêm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="header"></div>
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner__bee">
+      <img src="./assets/bee.png" alt="Bee Image" />
+    </div>
+    <div class="banner__info">
+      <h3 class="banner__info__heading">
+        <span class="banner__info__heading__main">Bạn ơiiiiii,</span>
+        <span class="banner__info__heading__sub">nhớ giữ liên lạc với Beedu nhé &lt;3</span>
+      </h3>
+      <a href="#" type="button" class="btn btn-custom btn-custom--primary">Liên hệ ngay</a>
+    </div>
+  </section>
+  <!-- CONTACT FORM -->
+  <section class="contact">
+    <div class="contact__heading">
+      <span class="contact-form__heading__main">Giữ liên lạc với chúng tôi</span>
+      <span class="contact-form__heading__sub">Nếu có thắc mắc đừng ngại gửi tin nhắn cho chúng tôi</span>
+    </div>
+    <form class="contact__form">
+      <div class="form-group form-group--custom">
+        <label for="name">Tên</label>
+        <input type="text" name="name" id="name" class="form-control--custom" />
+      </div>
+      <div class="form-group form-group--custom">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" class="form-control--custom" />
+      </div>
+      <div class="form-group form-group--custom">
+        <label for="phone">Số điện thoại</label>
+        <input type="text" name="phone" id="phone" class="form-control--custom" />
+      </div>
+      <div class="form-group form-group--custom">
+        <label for="content">Nội dung</label>
+        <textarea name="content" id="content" class="form-control--custom" rows="6"></textarea>
+      </div>
+      <div class="form-group form-group--custom text-center">
+        <a type="button" id='contact-btn' class="btn btn-custom--primary px-4 py-2" style="font-size: 24px" data-bs-toggle="modal"
+          href="#exampleModal" role="button">
+          Gửi
+          <span style="margin-left: 12px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29.965" height="26.114"
+              viewBox="108.02 23.136 29.965 26.114">
+              <path d="m108.02 49.25 29.964-13.057-29.964-13.057v10.156l21.465 2.901-21.465 2.902V49.25Z" fill="#fff"
+                fill-rule="evenodd" data-name="Icon ionic-md-send" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </form>
+  </section>
+  <!-- MAP -->
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.909308383026!2d105.81621030000001!3d21.0363145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab128e9b83af%3A0xa68e660655f50532!2zMjY0IMSQ4buZaSBD4bqlbiwgTGnhu4V1IEdpYWksIEJhIMSQw6xuaCwgSMOgIE7hu5lp!5e0!3m2!1sen!2s!4v1655259714656!5m2!1sen!2s"
+      width="100%" height="824" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- CO-OPERATE -->
+  <section class="co-operate" >
+    <h3 class="co-operate__heading">
+      <span class="co-operate__heading__main">
+        <span class="co-operate__heading__main--upper">Liên Hệ</span>
+        <span class="co-operate__heading__main--lower">để hợp tác</span>
+      </span>
+      <span class="co-operate__heading__sub">Liên hệ ngay để biết thêm thông tin</span>
+    </h3>
+    <div class="co-operate__schema">
+      <div class="co-operate__schema__polygon shadow">
+        <h5 class="co-operate__schema__polygon__title">Địa chỉ</h5>
+        <p class="co-operate__schema__polygon__desc m-0">Lorem Ipsum is simply dummy text of the simply dummy text of the</p>
+      </div>
+      <div class="co-operate__schema__polygon">
+        <h5 class="co-operate__schema__polygon__title">Điện thoại</h5>
+        <p class="co-operate__schema__polygon__desc m-0">Lorem Ipsum is simply dummy text of the simply dummy text of the</p>
+      </div>
+      <div class="co-operate__schema__polygon">
+        <h5 class="co-operate__schema__polygon__title">Điện thoại</h5>
+        <p class="co-operate__schema__polygon__desc m-0">Lorem Ipsum is simply dummy text of the simply dummy text of the</p>
+      </div>
+  </section>
+  <section class="download-app">
+    <div class="download-app__overlap">
+      <span class="download-app__desc">Tải ứng dụng và Nhận ngay nhiều ưu đãi hấp dẫn!</span>
+      <a id="download-app-btn" href="./../download-now/index.html" type="button" class="btn btn-custom--primary" style="padding: 12px 40px; font-size: 24px">
+        Tải ngay
+        <span class="ms-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" viewBox="104.981 19.137 27 32">
+            <g data-name="Icon feather-download">
+              <path d="M118.48 37.137v-18" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#fff"
+                fill="transparent" data-name="Path 2545" />
+              <path d="m110.98 29.637 7.5 7.5 7.5-7.5" stroke-linejoin="round" stroke-linecap="round" stroke-width="3"
+                stroke="#fff" fill="transparent" data-name="Path 2544" />
+              <path d="M131.98 42.137v6a3 3 0 0 1-3 3h-21a3 3 0 0 1-3-3v-6" stroke-linejoin="round"
+                stroke-linecap="round" stroke-width="3" stroke="#fff" fill="transparent" data-name="Path 2543" />
+            </g>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__overlay">
+      <div class="footer__logo">
+        <img src="./assets/beedu_logo-web.png" alt="Beedu logo web" />
+      </div>
+      <div class="footer__contact__infor">
+        <h3 class="footer__contact__infor__main">Liên hệ với chúng tôi</h3>
+        <p class="footer__contact__infor__item">
+          Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        </p>
+        <p class="footer__contact__infor__item">Email: abcdzyx@gmail.com</p>
+        <p class="footer__contact__infor__item">Phone number: +84 0900 909 787</p>
+        <ul class="footer__social">
+          <li class="footer__social__item">
+            <img src="./assets/fb-icon.png" alt="Facebook icon">
+          </li>
+          <li class="footer__social__item">
+            <img src="./assets/instagram-icon.png" alt="Facebook icon">
+
+          </li>
+          <li class="footer__social__item">
+            <img src="./assets/be-icon.png" alt="Facebook icon">
+
+          </li>
+        </ul>
+      </div>
+      <div class="footer__register">
+        <h3 class="footer__contact__infor__main">Đăng ký</h3>
+        <p class="footer__contact__infor__item">
+          Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        </p>
+        <input type="text" class="form-control" placeholder="Email" />
+      </div>
+    </div>
+  </footer>
+  <!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="modal-title text-center" style="font-size: 42px; margin-top: 40px; font-weight: 400">
+            Gửi tin nhắn thành công!
+          </h5>
+          <div class="modal__bee-congratulation-image">
+            <img src="./assets/bee-congratulation.png" alt="Bee congratulation" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+    <script>
+        $(function(){$('#header').load('./../../component/header/index.html') })     
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+@import 'base/utilities.css';
+
+@import 'pages/home.css';
+@import 'pages/home2.css';
+@import 'pages/home3.css';
+@import 'pages/home4.css';
+@import 'pages/home5.css';
+@import 'pages/home6.css';
+@import 'pages/home7.css';
+@import 'pages/home8.css';

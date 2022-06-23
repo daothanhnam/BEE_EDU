@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- Setting-->
+    <div class="setting">
+        <p>Cài đặt chung</p>
+        <div class="setting__left setting__main">
+            
+            <div class="setting__content">
+                <p>Chế độ tối</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, praesentium? Qui quaerat ducimus inventore? Quo incidunt doloribus mollitia beatae nostrum veniam eaque illum sequi ut. Culpa odit iste nobis vitae?</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox" none-checked>
+                <span class="slider"></span>
+            </label>    
+        </div>
+        <div class="setting__right  setting__main ">
+            <div class="setting__content">
+                <p>Cài đặt thông báo</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, praesentium? Qui quaerat ducimus inventore? Quo incidunt doloribus mollitia beatae nostrum veniam eaque illum sequi ut. Culpa odit iste nobis vitae?</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            
+            
+        </div>
+    </div>
+   <!-- FOOTER --> 
+     <footer class="footer">
+        <div class="footer__overlay">
+            <div class="footer__logo">
+                <img src="./assets/beedu_logo-web.png" alt="Beedu logo web" />
+            </div>
+            <div class="footer__contact__infor">
+                <h3 class="footer__contact__infor__main">Liên hệ với chúng tôi</h3>
+                <p class="footer__contact__infor__item">
+                    Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                </p>
+                <p class="footer__contact__infor__item">Email: abcdzyx@gmail.com</p>
+                <p class="footer__contact__infor__item">Phone number: +84 0900 909 787</p>
+                <ul class="footer__social">
+                    <li class="footer__social__item">
+                        <img src="./assets/fb-icon.png" alt="Facebook icon">
+                    </li>
+                    <li class="footer__social__item">
+                        <img src="./assets/instagram-icon.png" alt="Facebook icon">
+
+                    </li>
+                    <li class="footer__social__item">
+                        <img src="./assets/be-icon.png" alt="Facebook icon">
+
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__register">
+                <h3 class="footer__contact__infor__main">Đăng ký</h3>
+                <p class="footer__contact__infor__item">
+                    Adress: Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                </p>
+                <input type="text" class="form-control" placeholder="Email" />
+            </div>
+        </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title text-center" style="font-size: 42px; margin-top: 40px; font-weight: 400">
+                        Gửi tin nhắn thành công!
+                    </h5>
+                    <div class="modal__bee-congratulation-image">
+                        <img src="./assets/bee-congratulation.png" alt="Bee congratulation" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function () { $('#header').load('./../../component/header/index.html') }) 
+        textarea = document.querySelector("#autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+      
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }    
+    </script>
+</body>
+</html>

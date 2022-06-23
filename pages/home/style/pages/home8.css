@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+  background-image: url(./../../asset/imgs/book-with-green-board-background.png);
+}
+
+.footer__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 80px;
+}
+
+.footer__overlay > div {
+  width: 33%;
+  padding: 0 60px;
+}
+
+.footer__contact__infor__main {
+  color: #fad126;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.footer__contact__infor__item {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social__item {
+  display: inline-block;
+}
+
+.footer__register {
+  align-self: flex-start;
+}

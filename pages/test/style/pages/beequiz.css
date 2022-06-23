@@ -1,0 +1,84 @@
+.beequiz {
+    background: url('../../asset/imgs/background-dep.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 600px; */
+    padding-bottom: 50px;
+    margin: 150px 100px;
+    text-align: center;
+}
+
+.beequiz .img-dautruong {
+    width: 40%;
+    margin: 0 auto;
+    transform: translateY(-50px);
+}
+
+.beequiz .img-dautruong img {
+    width: 100%;
+}
+
+.beequiz .time {
+    font-size: 25px;
+    transform: translateY(-30px);
+
+}
+
+.beequiz .time span {
+    font-size: 40px;
+    padding: 0 30px 0 15px;
+    font-weight: 700;
+}
+
+.beequiz .box {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fefac3;
+    padding: 50px 60px;
+}
+
+.beequiz h4 {
+    font-size: 120px;
+    color: #f98201;
+}
+
+.beequiz p {
+    font-size: 25px;
+}
+
+.beequiz button {
+    font-size: 25px;
+    width: 100%;
+    background-color: #3c74b3;
+    border: none;
+    outline: none;
+    padding: 20px 0;
+    color: white;
+    margin-top: 20px;
+}
+
+.share {
+    background: linear-gradient(#fddc2d, #fbad18);
+    padding:150px 100px;
+}
+
+.share .box {
+    padding: 50px 70px;
+    background-color: white;
+    font-size: 40px;
+    text-align: right;
+    position: relative;
+}
+.share .box img{
+   position: absolute;
+   bottom: 0;
+   left: 2%;
+   width: 200px;
+}
+.share .box img:first-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+ }
