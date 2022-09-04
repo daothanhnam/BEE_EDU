@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <a href="./../home/index.html" 
+    <a href="../../index.html" 
     class="back__btn" onclick="history.back()">
       <img src="../../assets/images/icons/backIcon.svg" alt="" />
     </a>
@@ -96,7 +96,7 @@
           e.defaultPrevented()
         }else{
           localStorage.setItem('user',JSON.stringify({fullname:"Luc Duc Thanh",email: email}))
-          document.location.href = '/pages/home/index.html'
+          document.location.href = '../../index.html'
         }
       })
     </script>

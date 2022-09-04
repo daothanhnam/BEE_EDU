@@ -4,7 +4,7 @@
   </div>
   <ul class="nav">
     <li class="nav-item active">
-      <a href="./../home/index.html" class="nav-link nav-link--custom">Trang chủ</a>
+      <a href="./../../index.html" class="nav-link nav-link--custom">Trang chủ</a>
     </li>
     <li class="nav-item">
       <a href="./../../pages/news/index.html" class="nav-link nav-link--custom">Tin tức</a>
@@ -30,15 +30,16 @@
           Xem thêm
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="./../view-more/index.html">Liên hệ</a></li>
+         
+          <li><a class="dropdown-item" href="../../pages/view-more/index.html">Liên hệ</a></li>
           <li>
             <hr class="dropdown-divider m-0" />
           </li>
-          <li><a class="dropdown-item" href="./../about-us/index.html">Về chúng tôi</a></li>
+          <li><a class="dropdown-item" href="../../pages/about-us/index.html">Về chúng tôi</a></li>
         </ul>
       </div>
     </li>
-  </ul>
+  </ul><a href="../../pages/"></a>
   <div class="actions"></div>
 </header>
 <script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -62,16 +63,17 @@
                     <p class="email mb-0">${user.email}</p>
                 </div>
             </div>
+            
             <li><hr class="dropdown-divider m-0"></li>
-            <li><a class="dropdown-item" href="./../post/index.html">Hồ sơ</a></li>
-            <li><a class="dropdown-item" href="./../support/index.html">Trợ giúp</a></li>
-            <li><a class="dropdown-item" href="./../setting/index.html">Cài đặt</a></li>
+            <li><a class="dropdown-item" href="../../pages/post/index.html">Hồ sơ</a></li>
+            <li><a class="dropdown-item" href="../../pages/support/index.html">Trợ giúp</a></li>
+            <li><a class="dropdown-item" href="../../pages/setting/index.html">Cài đặt</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" onclick="signOut()">Đăng xuất</a></li>
           </ul>
         </div>`
     : // Haven't login yet
-      `<a href="./../signIn/" class="btn btn-warning text-direction-none text-light">
+      `<a href="../../pages/signIn/index.html" class="btn btn-warning text-direction-none text-light">
           Đăng nhập/Đăng kí<span class="action__icon"><i class="fa-solid fa-circle-user"></i></span>
         </a>`;
   const actionDiv = document.getElementsByClassName('actions')[0];
@@ -84,6 +86,6 @@
 
   function signOut() {
     localStorage.clear();
-    document.location.href = '/pages/home/index.html';
+    document.location.href = '../../index.html';
   }
 </script>
